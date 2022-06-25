@@ -1,0 +1,24 @@
+body {
+height: 100vh;
+width: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url(https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg);
+background-size: 100vh ;
+
+}
+
+#gameBoard {
+    border: solid 10px black; 
+    height: 100vh;
+    width: 100vh;
+}
+
+#snake {
+
+}
+
+#food {
+
+}
