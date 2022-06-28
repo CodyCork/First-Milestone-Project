@@ -1,0 +1,17 @@
+PRINCIPLE:
+This is a snake game that we all know and love. (I hope)
+It consists of a snake and the snake's food. 
+
+OBJECTIVE:
+When the snake eats the food, it grows by one segment. 
+If the snake hits one of the four walls, or runs into itself, then the game ends.
+
+INFO SOURCES:
+
+This is the repo I glanced at to see what code was implemented in order to get the game to function properly.
+
+WebDevSimplified:
+https://github.com/WebDevSimplified/Javascript-Snake-Game
+
+Code that was used from this repo includes the content that is in:
+( grid.js , input.js )

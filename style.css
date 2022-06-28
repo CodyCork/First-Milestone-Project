@@ -16,13 +16,13 @@ background-size: 100vh ;
 }
 
 #gameBoard {
-    border: solid 10px rgba(0, 0, 0, .8); 
-    height: 97vmin;
+    border: solid 1.5vmin rgba(0, 0, 0, .9); 
+    height: 95vmin;
     width: 100vmin;
-    background-color: rgba(255, 255, 255, .35);
+    background-color: rgba(255, 255, 255, .3);
     display: grid;
-    grid-template-columns: repeat(30, 1fr);
-    grid-template-rows: repeat(30, 1fr);
+    grid-template-columns: repeat(31, 1fr);
+    grid-template-rows: repeat(31, 1fr);
 }
 
 .snake {

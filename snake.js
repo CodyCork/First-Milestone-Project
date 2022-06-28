@@ -1,5 +1,12 @@
+// snakes starting position 
+let snake = [{
+  xPos : 15,
+  yPos : 15
+}]
+// head and body of snake
+let newSnakeBody = 0
+// snake speed
+export let snakeSpeed = 6
 
 
-export const snakeSpeed = 2.5
-let newSnakeSegments = 0
-const snakeBody = [{ x: 15, y: 15 }]
+
