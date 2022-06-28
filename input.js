@@ -1,3 +1,4 @@
+// This allows you to input your snakes direction
 let inputDirection = {
    x : 0,
    y : 0
