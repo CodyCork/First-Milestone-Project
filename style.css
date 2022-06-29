@@ -1,18 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    /* font-family: ; */
-}
-
 body {
-height: 100vh;
-width: auto;
-display: flex;
-justify-content: center;
-align-items: center;
-background-image: url(https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg);
-background-size: 100vh ;
-
+    margin: 0;
+    padding: 0;    
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg);
+    background-size: 100vh ;
 }
 
 #gameBoard {
@@ -20,15 +16,4 @@ background-size: 100vh ;
     height: 95vmin;
     width: 100vmin;
     background-color: rgba(255, 255, 255, .3);
-    display: grid;
-    grid-template-columns: repeat(31, 1fr);
-    grid-template-rows: repeat(31, 1fr);
-}
-
-.snake {
-    background-color: hsl(black, 100%, 50%);
-}
-
-.food {
-    background-color: hsl(red, 100%, 50%);
 }
