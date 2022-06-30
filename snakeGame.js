@@ -1,6 +1,7 @@
 import { keyDown , xInputDirection , yInputDirection } from "./input.js";
 import { drawApple } from "./snakeFood.js";
 import { drawSnake } from "./snake.js";
+import { drawSnakeScore } from "./snakeScore.js";
 //canvas
 const canvas = document.getElementById('gameBoard')
 export const ctx = canvas.getContext('2d')
@@ -37,8 +38,9 @@ let snakeScore = 0;
 //snake game loop
 const drawGame = () => {
     drawSnake()
-    
     drawApple()
+    
+    drawSnakeScore()
     
     snakeDirection()
     
