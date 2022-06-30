@@ -1,29 +1,50 @@
+import { keyDown , xInputDirection , yInputDirection } from "./input.js";
+import { drawApple } from "./snakeFood.js";
+import { drawSnake } from "./snake.js";
 //canvas
 const canvas = document.getElementById('gameBoard')
-const ctx = canvas.getContext('2d')
+export const ctx = canvas.getContext('2d')
 
 // snake speed
 let snakeSpeed = 7
 
 //canvas size
 let tileCount = 30
-let tileSize = canvas.width / tileCount;
+export let tileWidth = canvas.width / tileCount;
+export let tileHeight = canvas.height / tileCount; 
+
+export class SnakePart {
+    constructor(x, y) {
+      this.x = x;
+      this.y = y;
+    }
+  }
 
 //snake head and body
-let headX = 15
-let headY = 15
-const snakeParts = []
-let tailLength = 1
+export let headX = 15
+export let headY = 15
+export const snakeParts = []
+export let tailLength = 1
+
+const snakeDirection = () => {
+    headX += xInputDirection;
+    headY += yInputDirection;
+}
+
+//Score variable
+let snakeScore = 0;
 
 //snake game loop
 const drawGame = () => {
     drawSnake()
+    
+    drawApple()
+    
+    snakeDirection()
+    
     setTimeout(drawGame, 1000 / snakeSpeed)
 }
-//Snake on canvas
-const drawSnake = () => {
-    ctx.fillStyle = 'red'
-    ctx.fillRect = (15, 15, tileSize, tileSize )
-}
+
+document.body.addEventListener("keydown", keyDown);
 
 drawGame()
