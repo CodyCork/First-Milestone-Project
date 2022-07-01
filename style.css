@@ -1,19 +1,19 @@
 body {
-    margin: 0;
-    padding: 0;    
-    height: 100vh;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg);
-    background-size: 100vh ;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://wallpapercave.com/wp/wp3906260.jpg);
+  background-size: 140vh;
 }
 
 canvas {
-    border: solid 1.5vmin rgba(0, 0, 0, .9); 
-    height: 85vh;
-    width: 95vh;
-    background-color: rgba(255, 255, 255, .4);
+  border: solid 1.5vmin rgba(0, 0, 0, 0.9);
+  height: 85vh;
+  width: 95vh;
+  /* background-color: rgba(255, 255, 255, .4); */
 }
