@@ -1,13 +1,19 @@
 import { keyDown, xInputDirection, yInputDirection } from "./input.js";
 import { drawApple } from "./snakeFood.js";
 import { clearTile, drawSnake } from "./snake.js";
-import { drawSnakeScore } from "./snakeScore.js";
+import { drawSnakeScore, gameOver } from "./snakeScore.js";
 //canvas
 export const canvas = document.getElementById("gameBoard");
 export const ctx = canvas.getContext("2d");
 
 // snake speed
 let snakeSpeed = 7;
+
+export let inputsXVelocity = 0;
+export let inputsYVelocity = 0;
+
+export let xVelocity = 0;
+export let yVelocity = 0;
 
 //canvas size
 let tileCount = 30;
@@ -25,18 +31,23 @@ export class SnakePart {
 export let headX = 15;
 export let headY = 15;
 export const snakeParts = [];
-export let tailLength = 1;
+export let tailLength = 2;
 
 const snakeDirection = () => {
   headX += xInputDirection;
   headY += yInputDirection;
 };
 
-//Score variable
-export let snakeScore = 0;
-
 //snake game loop
 const drawGame = () => {
+  xVelocity = inputsXVelocity;
+  yVelocity = inputsYVelocity;
+
+  let result = gameOver();
+  if (result) {
+    return;
+  }
+
   clearTile();
 
   drawSnake();
@@ -45,6 +56,7 @@ const drawGame = () => {
   drawSnakeScore();
 
   snakeDirection();
+  gameOver();
 
   setTimeout(drawGame, 1000 / snakeSpeed);
 };

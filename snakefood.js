@@ -13,4 +13,8 @@ export const drawApple = () => {
     tileWidth,
     tileHeight
   );
+    // for (let i = 0; i < array.length; i++) {
+    //     const element = applePosition[i];
+    //     Math.random()
+    // }
 };
