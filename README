@@ -7,4 +7,6 @@ When the snake eats the food, it grows by one segment.
 If the snake hits one of the four walls, or runs into itself, then the game ends.
 
 INFO:
-Any info used to create this game was gathered from stack over flow
+-Any info used to create this game was gathered from stack over flow and w3Schools.
+-canvas info obtained from :https://www.w3schools.com/Tags/canvas_fillrect.asp
+-sounds obtained from https://www.zapsplat.com/

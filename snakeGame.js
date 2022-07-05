@@ -93,6 +93,7 @@ let yInputDirection = 0;
 //This code is partially from stackoverflow,
 //but it allows me to use the arrow keys or the w,a,s,d keys
 //to move the snake on the canvas
+//https://stackoverflow.com/questions/1402698/binding-arrow-keys-in-js-jquery
 const keyDown = (event) => {
   //up
   if (event.keyCode == 38 || event.keyCode == 87) {
