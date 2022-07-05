@@ -5,3 +5,6 @@ It consists of a snake and the snake's food.
 OBJECTIVE:
 When the snake eats the food, it grows by one segment. 
 If the snake hits one of the four walls, or runs into itself, then the game ends.
+
+INFO:
+Any info used to create this game was gathered from stack over flow
