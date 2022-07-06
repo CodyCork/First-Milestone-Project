@@ -3,7 +3,7 @@ const canvas = document.getElementById("gameBoard");
 const ctx = canvas.getContext("2d");
 
 // snake speed
-let snakeSpeed = 10;
+let snakeSpeed = 15;
 // snake score
 let snakeScore = 0;
 
