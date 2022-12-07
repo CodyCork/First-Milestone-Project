@@ -1,3 +1,5 @@
+$background: url(https://wallpapercave.com/wp/wp3906260.jpg);
+
 body {
   margin: 0px;
   padding: 0px;
@@ -6,7 +8,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(https://wallpapercave.com/wp/wp3906260.jpg);
+  background-image: $background ;
   background-size: 140vh;
 }
 
@@ -15,5 +17,3 @@ canvas {
 }
 
 /*# sourceMappingURL=style.scss.map */
-
-
